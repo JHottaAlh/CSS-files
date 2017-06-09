@@ -1,15 +1,14 @@
 @CHARSET "UTF-8";
-/* input,submitにclassを定義して使う 
-*例:<input type = "submit" class = "resurrection" value = "編集"/>
-*/
 
-/* 復活(ディープブルー) */
+.top-menu {
+	z-index: 2;
+}
+
+/* 復活 */
 
 .resurrection {
-	position: relative;
 	border: 1px solid #00BFFF;
  	padding: 10px 40px;
-	z-index: 2;
 	color: #00BFFF;
 	font-weight: bold;
 	border-color: #00BFFF;
@@ -29,8 +28,6 @@
 
 .resurrection::before,
 .resurrection::after {
-	position: absolute;
-	z-index: -1;
 	display: block;
 	content: '';
 	top: 0;
@@ -63,12 +60,10 @@
 }
 
 
-/* 停止(ディープピンク) */
+/* 停止 */
 .button {
-	position: relative;
 	border: 1px solid #FF1493;
  	padding: 10px 40px;
-	z-index: 2;
 	color: #FF1493;
 	font-weight: bold;
 	border-color: #FF1493;
@@ -88,8 +83,6 @@
 
 .button::before,
 .button::after {
-	position: absolute;
-	z-index: -1;
 	display: block;
 	content: '';
 	top: 0;
@@ -121,13 +114,12 @@
 	background-color: #FF1493;
 }
 
-/* 編集(イエロー) */
+/* 編集 */
 
 .editbutton {
-	position: relative;
 	border: 1px solid #ffcc33;
  	padding: 10px 40px;
-	z-index: 2;
+	z-index: -1;
 	color: #ffcc33;
 	font-weight: bold;
 	border-color: #ffcc33;
@@ -147,8 +139,7 @@
 
 .editbutton::before,
 .editbutton::after {
-	position: absolute;
-	z-index: -1;
+	z-index: -3;
 	display: block;
 	content: '';
 	top: 0;
