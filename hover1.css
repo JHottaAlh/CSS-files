@@ -1,6 +1,9 @@
 @CHARSET "UTF-8";
+/* input,submitにclassを定義して使う 
+*例:<input type = "submit" class = "resurrection" value = "編集"/>
+*/
 
-/* 復活 */
+/* 復活(ディープブルー) */
 
 .resurrection {
 	position: relative;
@@ -60,7 +63,7 @@
 }
 
 
-/* 停止 */
+/* 停止(ディープピンク) */
 .button {
 	position: relative;
 	border: 1px solid #FF1493;
@@ -118,7 +121,7 @@
 	background-color: #FF1493;
 }
 
-/* 編集 */
+/* 編集(イエロー) */
 
 .editbutton {
 	position: relative;
